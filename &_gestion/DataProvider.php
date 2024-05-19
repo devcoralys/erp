@@ -6,7 +6,7 @@ class DataProvider {
     protected $con;
 
     public function __construct() {
-        $this->con = new PDO('mysql:host=localhost;dbname=sttci_app_db_2024', 'sttci_ulrich', '@Succes2019');
+        $this->con = new PDO('mysql:host=localhost;dbname=coralys1_erp_db', 'coralys1_admin_dev', '@Coralys2024');
     }
 
     /**
@@ -17,7 +17,7 @@ class DataProvider {
         $req = $this->con->prepare($sql);
         $req->execute();
         return $req->rowCount();
-    }
+    }  
 
 
 }

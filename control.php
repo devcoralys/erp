@@ -1,6 +1,5 @@
 <?php
 session_start();
-//include('access.php');
 include('connex.php');
 
 $moto=addslashes($_POST['mot_pas']);
@@ -47,29 +46,8 @@ $_SESSION['is_valid']=$membre['is_valid'];
 $_SESSION['service_id']=$membre['service_id'];
 
 //Controles d'acces
-$_SESSION['acces_fournisseur']=$membre['acces_fournisseur'];
-$_SESSION['acces_client']=$membre['acces_client'];
-$_SESSION['acces_groupage']=$membre['acces_groupage'];
-$_SESSION['acces_dossier']=$membre['acces_dossier'];
-$_SESSION['acces_finance']=$membre['acces_finance'];
-$_SESSION['acces_rh']=$membre['acces_rh'];
-$_SESSION['acces_secur']=$membre['acces_secur'];
-$_SESSION['acces_dashboard']=$membre['acces_dashboard'];
-$_SESSION['acces_cotation_valide']=$membre['acces_cotation_valide'];
-$_SESSION['acces_tout_groupage']=$membre['acces_tout_groupage'];
-$_SESSION['acces_autre_envoi']=$membre['acces_autre_envoi'];
-$_SESSION['acces_autre_envoi_france']=$membre['acces_autre_envoi_france'];
-$_SESSION['acces_tout_autre_envoi']=$membre['acces_tout_autre_envoi'];
-$_SESSION['acces_tout_autre_envoi_france']=$membre['acces_tout_autre_envoi_france'];
-$_SESSION['acces_tout_rapport']=$membre['acces_tout_rapport'];
-$_SESSION['acces_rapport_import']=$membre['acces_rapport_import'];
-$_SESSION['acces_rapport_export']=$membre['acces_rapport_export'];
-$_SESSION['acces_rapport_autre']=$membre['acces_rapport_autre'];
-$_SESSION['agence_utilisateur']=$membre['agence_utilisateur'];
-$_SESSION['acces_comptabilite']=$membre['acces_comptabilite'];
-$_SESSION['acces_demande_decaissement']=$membre['acces_demande_decaissement'];
-$_SESSION['acces_caisse']=$membre['acces_caisse'];
-$_SESSION['acces_valid_decaissement']=$membre['acces_valid_decaissement'];
+$_SESSION['acces_rh'] = $membre['acces_rh'];
+$_SESSION['acces_secur'] = $membre['acces_secur'];
 
 $req=$con->prepare("UPDATE utilisateur SET connecte=:A WHERE id_utilisateur=:B");
 $req->execute(array('A'=>'1', 'B'=>$membre['id_utilisateur']));
@@ -86,11 +64,7 @@ $red=$con->prepare("INSERT INTO trace (lib_trace, date_trace, adresse_ip, secur)
 $red->execute(array('A'=>$lib_trace, 'B'=>$date_trace, 'C'=>$adresse, 'D'=>$_SESSION['secur_site']));
 
 
-$to = "jacques_kadjo@stt.ci";
-$subject = "CONNEXION REUSSIE";
-$txt = "Nouvelle connexion effectuée sur l'application. Cliquez sur <app.stt.ci'> pour vous connecter.";
-$headers = "From: support@stt.ci";
-mail($to,$subject,$txt,$headers);
+
 
 unset($con);
 }
