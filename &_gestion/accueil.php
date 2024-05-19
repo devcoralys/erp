@@ -222,6 +222,47 @@ if( isset($_SESSION['pass_site']) && $_SESSION['pass_site']!='' && isset($_SESSI
                         </li>
                         <?php } ?>
 
+                        <li>
+                            <a href="javascript:void();" class="has-arrow">
+                                <i class="fa fa-address-card" data-feather="briefcase_"></i>
+                                <span class="menu-item" data-key="t-projects">Commercial</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="reglement_fournisseur/reglement_fournisseur.php"
+                                        data-key="t-p-grid">Clients</a></li>
+                                <li><a href="reglement_fournisseur/reglement_fournisseur.php"
+                                        data-key="t-p-grid">Commandes</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void();" class="has-arrow">
+                                <i class="fa fa-fire" data-feather="briefcase_"></i>
+                                <span class="menu-item" data-key="t-projects">Cuisine</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="reglement_fournisseur/reglement_fournisseur.php"
+                                        data-key="t-p-grid">Ingredients</a></li>
+                                <li><a href="reglement_fournisseur/reglement_fournisseur.php"
+                                        data-key="t-p-grid">Plats</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void();" class="has-arrow">
+                                <i class="fa fa-motorbike" data-feather="briefcase_"></i>
+                                <span class="menu-item" data-key="t-projects">Livraison</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="reglement_fournisseur/reglement_fournisseur.php"
+                                        data-key="t-p-grid"><i class="fa fa-tags" data-feather="briefcase_"></i> &nbsp;Prévues</a></li>
+                                <li><a href="reglement_fournisseur/reglement_fournisseur.php"
+                                        data-key="t-p-grid"><i class="fa fa-spinner fa-spin" data-feather="briefcase_"></i> &nbsp;En cours</a></li>
+                                <li><a href="reglement_fournisseur/reglement_fournisseur.php"
+                                        data-key="t-p-grid"><i class="fa fa-check" data-feather="briefcase_"></i> &nbsp;Livrées</a></li>
+                            </ul>
+                        </li>
+
                       
 
                         <li class="menu-title">Sécurité</li>
