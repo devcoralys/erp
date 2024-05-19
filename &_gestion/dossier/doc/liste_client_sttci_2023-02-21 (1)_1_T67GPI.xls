@@ -1,0 +1,40 @@
+
+	<br />
+<h1><strong style="font-size:20px; color:red; align:center; text-decoration:underline;">LISTE DES CLIENTS</strong></h1>
+ 	<strong>G&eacute;n&eacute;r&eacute;e le : </strong>21/02/2023  11:00
+	<br /><br /><br /> Par<br />  <strong style="font-size:18px; font-color:red;">Liste des clients STTCI :</strong>  <br/><br/><table class="utilisateur tab_list_client"  border="2" >
+		 <tr class="td tr"  bgcolor="#0e7e70"  >
+			<td width="150">Code</td>
+			<td width="150">Nom du client</td>
+			<td width="150">Email</td>
+			<td width="150">Téléphone</td>
+		</tr><tr class="td td_vu" bgcolor="#FFFFFF" >
+				<td>STT20230221-0004</td>
+				<td>SICS (SOCIETE INTERNATIONALE DE CHARCUTERIE ET DE SALAISONS)</td>	  
+				<td>nyeo@sics.ci</td>
+				<td>0707416362 / 2721754586</td>
+			</tr><tr class="td td_vu" bgcolor="#F1F1F1" >
+				<td>STT20230221-0004</td>
+				<td>SBTA</td>	  
+				<td>info@sbta.ci
+</td>
+				<td>12655885</td>
+			</tr><tr class="td td_vu" bgcolor="#FFFFFF" >
+				<td>STT20230221-0003</td>
+				<td>CIE</td>	  
+				<td>info@cie.ci
+</td>
+				<td>012998999</td>
+			</tr><tr class="td td_vu" bgcolor="#F1F1F1" >
+				<td>STT20230221-0002</td>
+				<td>SOTRA</td>	  
+				<td>info@sotra.ci
+</td>
+				<td>82043556</td>
+			</tr><tr class="td td_vu" bgcolor="#FFFFFF" >
+				<td>STT20230221-0001</td>
+				<td>UTB</td>	  
+				<td>info@utb.ci
+</td>
+				<td>012125474</td>
+			</tr></table><br/><br/>

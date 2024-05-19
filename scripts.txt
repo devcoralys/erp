@@ -1,0 +1,4 @@
+PHP
+
+Format monetaire : number_format($montant_a_payer,0,',',' ');
+Formt date : date("d/m/Y � H:i:s", strtotime($row['date_creat_don']))

@@ -1,0 +1,99 @@
+[15-Apr-2024 22:30:07 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/sttci/public_html/app.stt.ci/gestion_cron/exportation/pdf/gen_point.php on line 3
+[15-Apr-2024 22:30:07 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 432
+[15-Apr-2024 22:30:07 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 740
+[15-Apr-2024 22:30:07 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 830
+[15-Apr-2024 22:30:07 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1193
+[15-Apr-2024 22:30:07 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1199
+[15-Apr-2024 22:30:07 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1460
+[15-Apr-2024 22:30:07 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; FPDF has a deprecated constructor in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 16
+[15-Apr-2024 22:30:07 UTC] PHP Deprecated:  The each() function is deprecated. This message will be suppressed on further calls in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1289
+[16-Apr-2024 22:30:08 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/sttci/public_html/app.stt.ci/gestion_cron/exportation/pdf/gen_point.php on line 3
+[16-Apr-2024 22:30:09 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 432
+[16-Apr-2024 22:30:09 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 740
+[16-Apr-2024 22:30:09 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 830
+[16-Apr-2024 22:30:09 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1193
+[16-Apr-2024 22:30:09 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1199
+[16-Apr-2024 22:30:09 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1460
+[16-Apr-2024 22:30:09 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; FPDF has a deprecated constructor in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 16
+[16-Apr-2024 22:30:09 UTC] PHP Deprecated:  The each() function is deprecated. This message will be suppressed on further calls in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1289
+[17-Apr-2024 22:30:08 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/sttci/public_html/app.stt.ci/gestion_cron/exportation/pdf/gen_point.php on line 3
+[17-Apr-2024 22:30:08 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 432
+[17-Apr-2024 22:30:08 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 740
+[17-Apr-2024 22:30:08 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 830
+[17-Apr-2024 22:30:08 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1193
+[17-Apr-2024 22:30:08 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1199
+[17-Apr-2024 22:30:08 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1460
+[17-Apr-2024 22:30:08 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; FPDF has a deprecated constructor in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 16
+[17-Apr-2024 22:30:08 UTC] PHP Deprecated:  The each() function is deprecated. This message will be suppressed on further calls in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1289
+[18-Apr-2024 22:30:07 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/sttci/public_html/app.stt.ci/gestion_cron/exportation/pdf/gen_point.php on line 3
+[18-Apr-2024 22:30:07 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 432
+[18-Apr-2024 22:30:07 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 740
+[18-Apr-2024 22:30:07 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 830
+[18-Apr-2024 22:30:07 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1193
+[18-Apr-2024 22:30:07 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1199
+[18-Apr-2024 22:30:07 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1460
+[18-Apr-2024 22:30:07 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; FPDF has a deprecated constructor in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 16
+[18-Apr-2024 22:30:08 UTC] PHP Deprecated:  The each() function is deprecated. This message will be suppressed on further calls in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1289
+[19-Apr-2024 22:30:07 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/sttci/public_html/app.stt.ci/gestion_cron/exportation/pdf/gen_point.php on line 3
+[19-Apr-2024 22:30:07 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 432
+[19-Apr-2024 22:30:07 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 740
+[19-Apr-2024 22:30:07 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 830
+[19-Apr-2024 22:30:07 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1193
+[19-Apr-2024 22:30:07 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1199
+[19-Apr-2024 22:30:07 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1460
+[19-Apr-2024 22:30:07 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; FPDF has a deprecated constructor in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 16
+[19-Apr-2024 22:30:08 UTC] PHP Deprecated:  The each() function is deprecated. This message will be suppressed on further calls in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1289
+[20-Apr-2024 22:30:06 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/sttci/public_html/app.stt.ci/gestion_cron/exportation/pdf/gen_point.php on line 3
+[20-Apr-2024 22:30:06 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 432
+[20-Apr-2024 22:30:06 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 740
+[20-Apr-2024 22:30:06 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 830
+[20-Apr-2024 22:30:06 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1193
+[20-Apr-2024 22:30:06 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1199
+[20-Apr-2024 22:30:06 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1460
+[20-Apr-2024 22:30:06 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; FPDF has a deprecated constructor in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 16
+[20-Apr-2024 22:30:06 UTC] PHP Deprecated:  The each() function is deprecated. This message will be suppressed on further calls in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1289
+[21-Apr-2024 22:30:06 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/sttci/public_html/app.stt.ci/gestion_cron/exportation/pdf/gen_point.php on line 3
+[21-Apr-2024 22:30:07 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 432
+[21-Apr-2024 22:30:07 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 740
+[21-Apr-2024 22:30:07 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 830
+[21-Apr-2024 22:30:07 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1193
+[21-Apr-2024 22:30:07 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1199
+[21-Apr-2024 22:30:07 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1460
+[21-Apr-2024 22:30:07 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; FPDF has a deprecated constructor in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 16
+[21-Apr-2024 22:30:07 UTC] PHP Deprecated:  The each() function is deprecated. This message will be suppressed on further calls in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1289
+[22-Apr-2024 22:30:08 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/sttci/public_html/app.stt.ci/gestion_cron/exportation/pdf/gen_point.php on line 3
+[22-Apr-2024 22:30:08 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 432
+[22-Apr-2024 22:30:08 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 740
+[22-Apr-2024 22:30:08 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 830
+[22-Apr-2024 22:30:08 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1193
+[22-Apr-2024 22:30:08 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1199
+[22-Apr-2024 22:30:08 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1460
+[22-Apr-2024 22:30:08 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; FPDF has a deprecated constructor in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 16
+[22-Apr-2024 22:30:08 UTC] PHP Deprecated:  The each() function is deprecated. This message will be suppressed on further calls in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1289
+[23-Apr-2024 22:30:11 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/sttci/public_html/app.stt.ci/gestion_cron/exportation/pdf/gen_point.php on line 3
+[23-Apr-2024 22:30:11 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 432
+[23-Apr-2024 22:30:11 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 740
+[23-Apr-2024 22:30:11 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 830
+[23-Apr-2024 22:30:11 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1193
+[23-Apr-2024 22:30:11 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1199
+[23-Apr-2024 22:30:11 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1460
+[23-Apr-2024 22:30:11 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; FPDF has a deprecated constructor in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 16
+[23-Apr-2024 22:30:12 UTC] PHP Deprecated:  The each() function is deprecated. This message will be suppressed on further calls in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1289
+[24-Apr-2024 22:30:04 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/sttci/public_html/app.stt.ci/gestion_cron/exportation/pdf/gen_point.php on line 3
+[24-Apr-2024 22:30:04 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 432
+[24-Apr-2024 22:30:04 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 740
+[24-Apr-2024 22:30:04 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 830
+[24-Apr-2024 22:30:04 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1193
+[24-Apr-2024 22:30:04 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1199
+[24-Apr-2024 22:30:04 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1460
+[24-Apr-2024 22:30:04 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; FPDF has a deprecated constructor in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 16
+[24-Apr-2024 22:30:05 UTC] PHP Deprecated:  The each() function is deprecated. This message will be suppressed on further calls in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1289
+[25-Apr-2024 22:30:03 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/sttci/public_html/app.stt.ci/gestion_cron/exportation/pdf/gen_point.php on line 3
+[25-Apr-2024 22:30:04 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 432
+[25-Apr-2024 22:30:04 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 740
+[25-Apr-2024 22:30:04 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 830
+[25-Apr-2024 22:30:04 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1193
+[25-Apr-2024 22:30:04 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1199
+[25-Apr-2024 22:30:04 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1460
+[25-Apr-2024 22:30:04 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; FPDF has a deprecated constructor in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 16
+[25-Apr-2024 22:30:04 UTC] PHP Deprecated:  The each() function is deprecated. This message will be suppressed on further calls in /home/sttci/public_html/app.stt.ci/pdf/fpdf.php on line 1289

@@ -1,0 +1,8 @@
+[17-Apr-2024 17:52:13 UTC] PHP Notice:  Trying to access array offset on value of type bool in /home/sttci/public_html/app.stt.ci/&_gestion/client/client/form_supprimer_client.php on line 13
+[17-Apr-2024 17:52:13 UTC] PHP Notice:  Trying to access array offset on value of type bool in /home/sttci/public_html/app.stt.ci/&_gestion/client/client/form_supprimer_client.php on line 17
+[17-Apr-2024 17:52:13 UTC] PHP Notice:  Trying to access array offset on value of type bool in /home/sttci/public_html/app.stt.ci/&_gestion/client/client/form_supprimer_client.php on line 17
+[17-Apr-2024 17:58:03 UTC] PHP Notice:  Undefined variable: matr in /home/sttci/public_html/app.stt.ci/&_gestion/client/client/ajout_client.php on line 14
+[17-Apr-2024 18:03:06 UTC] PHP Notice:  Trying to access array offset on value of type bool in /home/sttci/public_html/app.stt.ci/&_gestion/client/client/form_supprimer_client.php on line 13
+[17-Apr-2024 18:03:06 UTC] PHP Notice:  Trying to access array offset on value of type bool in /home/sttci/public_html/app.stt.ci/&_gestion/client/client/form_supprimer_client.php on line 17
+[17-Apr-2024 18:03:06 UTC] PHP Notice:  Trying to access array offset on value of type bool in /home/sttci/public_html/app.stt.ci/&_gestion/client/client/form_supprimer_client.php on line 17
+[17-Apr-2024 18:04:15 UTC] PHP Notice:  Undefined variable: matr in /home/sttci/public_html/app.stt.ci/&_gestion/client/client/ajout_client.php on line 14
