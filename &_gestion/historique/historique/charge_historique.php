@@ -284,7 +284,7 @@ $HTML.='
         $HTML.='<tr bgcolor="" class="td td_color">
         <td width="70">'.$row['date_trace'].'</td>
         <td width="80">'.stripslashes(ucwords(strtolower($nom))).'</td>
-        <td width="200">'.stripslashes(utf8_encode($row['lib_trace'])).'</td>
+        <td width="200">'.stripslashes(mb_convert_encoding($row['lib_trace'], 'UTF-8', 'ISO-8859-1')).'</td>
         <td width="90">'.$row['adresse_ip'].'</td></tr>';
                                     
         $i++;	                                                                 

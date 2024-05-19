@@ -70,68 +70,6 @@ include('../../connex.php');
 
                 <div class="d-flex">
 
-                    <!--Notifications-->
-                    <div class="dropdown d-inline-block">
-                        <button type="button" class="btn header-item noti-icon" id="page-header-notifications-dropdown"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i style="color:#fff;" class="icon-sm" data-feather="bell"></i>
-                            <span style="background-color:red; border-color:#3e58ff;" class="noti-dot bg-"></span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
-                            aria-labelledby="page-header-notifications-dropdown">
-                            <div class="p-3">
-                                <div class="row align-items-center">
-                                    <div class="col">
-                                        <h5 class="m-0 font-size-15"> Notifications </h5>
-                                    </div>
-                                    <div class="col-auto">
-                                        <a href="#!" class="small"> Marquer comme lu</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-simplebar style="max-height: 250px;">
-                                <h6 class="dropdown-header bg-light">Demandes en cours de saisie</h6>
-                           
-
-                                <?php
-                                    $afic=$con->prepare('SELECT * FROM besoin LEFT JOIN utilisateur ON utilisateur.secur=besoin.demandeur_secur WHERE id_besoin!="" AND decaisse=0 AND etat_besoin=0 ORDER BY id_besoin DESC ');
-                                    $afic->execute();
-
-                                    while($iafic=$afic->fetch())
-                                    {
-
-                                                ?>
-
-                                <a href="../besoin/besoin.php" class="text-reset notification-item">
-                                    <div class="d-flex border-bottom align-items-start">
-                                        <div class="flex-shrink-0">
-                                            <div class="avatar-sm me-3">
-                                                <span class="avatar-title bg-primary rounded-circle font-size-16">
-                                                    <i class="uil-shopping-basket"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-1"><?php echo stripslashes($iafic['objet_demande']); ?></h6>
-                                            <div class="text-muted">
-                                                <p class="mb-1 font-size-13">Cette demande est encore en cours de saisie.</p>
-                                                <p class="mb-0 font-size-10 text-uppercase fw-bold"><i class="mdi mdi-clock-outline"></i> Depuis le <?php echo date("d/m/Y à H:i:s", strtotime($iafic['date_creat_fiche'])); ?></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                            <?php } ?>
-
-                            </div>
-                            <div class="p-2 border-top d-grid">
-                                <a class="btn btn-sm btn-link font-size-14 btn-block text-center" href="javascript:void(0)">
-                                    <i class="uil-arrow-circle-right me-1"></i> <span>Continuer la saisie..</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/Fin notifications-->
 
                     <div class="dropdown d-inline-block">
                         <button type="button" class="btn header-item user text-start d-flex align-items-center" id="page-header-user-dropdown"
@@ -197,116 +135,7 @@ include('../../connex.php');
                 </a>
             </li>
 
-            <?php if($_SESSION['acces_client']==1 ){ ?>
-            <li>
-                <a href="../client/client.php">
-                    <i class="icon nav-icon fa fa-users" ></i>
-                    <span class="menu-item" data-key="t-email">Clients</span>
-                </a>
-            </li>
-            <?php } ?>
-            
-            <?php if($_SESSION['acces_fournisseur']==1 ){ ?>
-            <li>
-                <a href="../fournisseur/fournisseur.php">
-                    <i class="icon nav-icon fa fa-handshake" ></i>
-                    <span class="menu-item" data-key="t-email">fournisseurs</span>
-                </a>
-            </li>
-            <?php } ?>
-                    
-             <?php if($_SESSION['acces_demande_decaissement']==1 ){ ?>
-            <li>
-                <a href="../demande_decaissement/demande_decaissement.php">
-                    <i class="icon nav-icon fa fa-money-bills" ></i>
-                    <span class="menu-item" data-key="t-email">Demande de décaissement</span>
-                </a>
-            </li>
-            <?php } ?>
-            
-            <?php if($_SESSION['acces_caisse']==1 ){ ?>
-            <li>
-                <a href="../caisse/caisse.php">
-                    <i class="icon nav-icon fas fa-cash-register" ></i>
-                    <span class="menu-item" data-key="t-email">Caisse</span>
-                </a>
-            </li>
-            <?php } ?>
-            
-            <?php if($_SESSION['acces_comptabilite']==1 ){ ?>
-            <li>
-                <a href="javascript:void();" class="has-arrow">
-                    <i class="fa fa-balance-scale" data-feather="briefcase_"></i>
-                    <span class="menu-item" data-key="t-projects">Comptabilité</span>
-                </a>
-                <ul class="sub-menu" aria-expanded="false">
-                    <li><a href="../reglement_fournisseur/reglement_fournisseur.php" data-key="t-p-grid">Reglement Fournisseurs</a></li>
-                    <li><a href="../reglement_client/reglement_client.php" data-key="t-p-list">Reglement clients</a></li>
-                    <li><a href="../facture_normalise/facture_normalise.php" data-key="t-p-list">Factures normalisées</a></li>
-                </ul>
-            </li>
-            <?php } ?>
-
-            <?php if($_SESSION['acces_dossier']==1 ){ ?>
-            <li>
-                <a href="javascript:void();" class="has-arrow">
-                    <i class="fa fa-folder" data-feather="briefcase_"></i>
-                    <span class="menu-item" data-key="t-projects">Dossiers clients</span>
-                </a>
-                <ul class="sub-menu" aria-expanded="false">
-                    <li><a href="../dossier/dossier_import.php" data-key="t-p-grid">Import</a></li>
-                    <li><a href="../dossier_exp/dossier_export.php" data-key="t-p-list">Export</a></li>
-                    <!--<li><a href="../dossier/etat_codage.php" data-key="t-p-list">Etat de codage</a></li>-->
-                </ul>
-            </li>
-            <?php } ?>
-            <?php if($_SESSION['acces_groupage']==1 ){ ?>
-            <li>
-                <a href="../groupage/groupage.php">
-                    <i class="icon nav-icon fa fa-globe"></i>
-                    <span class="menu-item" data-key="t-email">Groupage</span>
-                </a>
-            </li>
-            <?php } ?>
-            
-             <?php if($_SESSION['acces_autre_envoi']==1 ){ ?>
-            <li>
-                <a href="../autre_envoi/autre_envoi.php">
-                    <i class="icon nav-icon fa fa-share"></i>
-                    <span class="menu-item" data-key="t-email">Autre envoi</span>
-                </a>
-            </li>
-            <?php } ?>  
-
-     <?php if($_SESSION['acces_autre_envoi_france']==1 ){ ?>
-                        <li>
-                            <a href="javascript:void();" class="has-arrow">
-                                <i class="fa fa-plane" data-feather="briefcase_"></i>
-                                <span class="menu-item" data-key="t-projects">STT International</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a a href="../autre_envoi_france/autre_envoi_france.php" data-key="t-p-grid"> Colis accompagnés</a></li>
-                                <li><a href="../autre_envoi_france/autre_envoi_france.php" data-key="t-p-list"> Colis DHL</a></li>
-                                <li><a href="../autre_envoi_france/autre_envoi_france.php" data-key="t-p-list"> Colis Fret</a></li>
-                                <li><a href="../autre_envoi_france/autre_envoi_france.php" data-key="t-p-list"> Colis Maritime</a></li>
-                            </ul>
-                        </li>
-                        <?php } ?>
-
-            <?php if($_SESSION['acces_finance']==1 ){ ?>
-            <li>
-                <a href="javascript:void();" class="has-arrow">
-                    <i class="fa fa-credit-card" data-feather="briefcase_"></i>
-                    <span class="menu-item" data-key="t-projects">Finances</span>
-                </a>
-                <ul class="sub-menu" aria-expanded="false">
-                    <li><a href="../encaissement/encaissement.php" data-key="t-p-grid"> Encaissement</a></li>
-                    <li><a href="../decaissement/decaissement.php" data-key="t-p-list"> Décaissement</a></li>
-                    <li><a href="../declaration/declaration.php" data-key="t-p-list"> Déclaration</a></li>
-                </ul>
-            </li>
-            <?php } ?>
-
+           
 
             <?php if($_SESSION['acces_rh']==1 ){ ?>
             <li>
@@ -317,13 +146,7 @@ include('../../connex.php');
             </li>
             <?php } ?>
             
-            <li>
-                <a href="../rapport/rapport.php" class="active">
-                    <i class="icon nav-icon fa fa-file-text"></i>
-                    <span class="menu-item">Rapport journalier</span>
-                </a>
-            </li>
-                    
+           
             <li class="menu-title">Sécurité</li>
 
             <li>
