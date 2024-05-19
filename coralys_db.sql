@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : dim. 19 mai 2024 à 13:05
+-- Généré le : dim. 19 mai 2024 à 14:30
 -- Version du serveur : 8.2.0
 -- Version de PHP : 8.2.13
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : ` coralys1_erp_db`
+-- Base de données : `coralys1_erp_db`
 --
 
 -- --------------------------------------------------------
@@ -85,6 +85,31 @@ INSERT INTO `groupe_utilisateur` (`id_type_groupe`, `nom_type_groupe`, `ajout_ty
 (2, 'Admin', 1, 1, 1, 1, 1, 1, 1, 1, '2022-05-30 12:05:58', 'lol'),
 (3, 'Super User', 1, 1, 1, 1, 1, 1, 1, 1, '2022-05-30 12:05:58', 'lol'),
 (4, 'User', 1, 1, 1, 1, 1, 1, 1, 1, '2022-05-30 12:05:58', 'lol');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `motif_sortie_pers_soign`
+--
+
+DROP TABLE IF EXISTS `motif_sortie_pers_soign`;
+CREATE TABLE IF NOT EXISTS `motif_sortie_pers_soign` (
+  `id_motif` int NOT NULL AUTO_INCREMENT,
+  `lib_motif` text,
+  `date_creat` datetime DEFAULT NULL,
+  `secur_ajout` text,
+  `date_mod` datetime DEFAULT NULL,
+  `secur_mod` text,
+  PRIMARY KEY (`id_motif`)
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `motif_sortie_pers_soign`
+--
+
+INSERT INTO `motif_sortie_pers_soign` (`id_motif`, `lib_motif`, `date_creat`, `secur_ajout`, `date_mod`, `secur_mod`) VALUES
+(8, 'Retraite', '2019-06-25 09:43:49', 'DCnHYO27', NULL, NULL),
+(6, 'CongÃ©es', '2019-06-25 09:27:40', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -183,7 +208,21 @@ CREATE TABLE IF NOT EXISTS `trace` (
   `date_trace` datetime NOT NULL,
   PRIMARY KEY (`ref_trace`),
   UNIQUE KEY `id_trace` (`ref_trace`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb3;
+
+--
+-- Déchargement des données de la table `trace`
+--
+
+INSERT INTO `trace` (`ref_trace`, `lib_trace`, `adresse_ip`, `secur`, `date_trace`) VALUES
+(1, 'Connexion de <b>Amin Dev (admin@coralys.ci)</b>', 'Adresse IP: ::1 Port: 64268', 'qXylyjW6OV', '2024-05-19 13:49:09'),
+(2, 'Connexion de <b>Amin Dev (admin@coralys.ci)</b>', 'Adresse IP: ::1 Port: 64619', 'qXylyjW6OV', '2024-05-19 13:56:24'),
+(3, 'Connexion de <b>Amin Dev (admin@coralys.ci)</b>', 'Adresse IP: ::1 Port: 64920', 'qXylyjW6OV', '2024-05-19 14:02:05'),
+(4, 'Connexion de <b>Amin Dev (admin@coralys.ci)</b>', 'Adresse IP: ::1 Port: 64957', 'qXylyjW6OV', '2024-05-19 14:02:44'),
+(5, 'Connexion de <b>Amin Dev (admin@coralys.ci)</b>', 'Adresse IP: ::1 Port: 64979', 'qXylyjW6OV', '2024-05-19 14:03:29'),
+(6, 'Connexion de <b>Amin Dev (admin@coralys.ci)</b>', 'Adresse IP: ::1 Port: 65062', 'qXylyjW6OV', '2024-05-19 14:06:09'),
+(7, 'Connexion de <b>Amin Dev (admin@coralys.ci)</b>', 'Adresse IP: ::1 Port: 65175', 'qXylyjW6OV', '2024-05-19 14:08:33'),
+(8, 'Connexion de <b>Amin Dev (admin@coralys.ci)</b>', 'Adresse IP: ::1 Port: 49826', 'qXylyjW6OV', '2024-05-19 14:16:53');
 
 -- --------------------------------------------------------
 
@@ -256,7 +295,21 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
 --
 
 INSERT INTO `utilisateur` (`id_utilisateur`, `secur`, `nom_utilisateur`, `email_utilisateur`, `motpass_utilisateur`, `connecte`, `personnel_soignant_id`, `photo_util`, `pseudo`, `tel_utilisateur`, `type_groupe_id`, `valide_util`, `date_creat`, `heure_creat`, `secur_ajout`, `date_mod`, `heure_mod`, `secur_mod`, `date_sup`, `heure_sup`, `secur_sup`, `statut`, `is_dg`, `personnel_id`, `is_valid`, `acces_groupage`, `acces_dossier`, `acces_finance`, `acces_rh`, `acces_secur`, `acces_dashboard`, `acces_client`, `agence_utilisateur`) VALUES
-(12, 'qXylyjW6OV', 'Amin Dev', 'admin@coralys.ci', 'c7ad44cbad762a5da0a452f9e854fdc1e0e7a52a38015f23f3eab1d80b931dd472634dfac71cd34ebc35d16ab7fb8a90c81f975113d6c7538dc69dd8de9077ec', '1', 0, 'photo_1673892590.jpg', '', '225074836771', 1, 0, '2022-12-23', '', 'lol', '0000-00-00', '', '', '0000-00-00', '', '', 0, 1, 6, 0, 0, 0, 0, 0, 0, 1, 1, 'AEROPORT FELIX HOUPHOUET BOIGNY ZONE FRET');
+(12, 'qXylyjW6OV', 'Amin Dev', 'admin@coralys.ci', 'c7ad44cbad762a5da0a452f9e854fdc1e0e7a52a38015f23f3eab1d80b931dd472634dfac71cd34ebc35d16ab7fb8a90c81f975113d6c7538dc69dd8de9077ec', '1', 0, 'photo_1673892590.jpg', '', '225074836771', 1, 0, '2022-12-23', '', 'lol', '0000-00-00', '', '', '0000-00-00', '', '', 0, 1, 6, 0, 0, 0, 0, 1, 1, 1, 1, 'AEROPORT FELIX HOUPHOUET BOIGNY ZONE FRET');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `utilisateur_service`
+--
+
+DROP TABLE IF EXISTS `utilisateur_service`;
+CREATE TABLE IF NOT EXISTS `utilisateur_service` (
+  `id_utilisateur_service` int NOT NULL AUTO_INCREMENT,
+  `utilisateur_id` int NOT NULL,
+  `service_id` int NOT NULL,
+  PRIMARY KEY (`id_utilisateur_service`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -271,7 +324,15 @@ CREATE TABLE IF NOT EXISTS `visite` (
   `date` datetime NOT NULL,
   `heure` varchar(8) NOT NULL,
   PRIMARY KEY (`id_visite`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `visite`
+--
+
+INSERT INTO `visite` (`id_visite`, `ip`, `date`, `heure`) VALUES
+(1, '::1', '2024-05-19 00:00:00', '17161279'),
+(2, '::1', '2024-05-19 00:00:00', '17161279');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
