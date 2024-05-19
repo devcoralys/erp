@@ -44,6 +44,9 @@ $('.button_annul').live('click',function(){
 			$("#service").val('');
 			$("#site").val('');
 			$("#fonction").val('');
+
+			console.log('Personne sélectionnée : '+id_pers);
+
 		if(id_pers!='')
 		{
 		$.ajax({
@@ -52,6 +55,8 @@ $('.button_annul').live('click',function(){
 		   url: "utilisateur/charge_info_pers.php",
 		   data:"personnel_id="+id_pers,
 		   success: function(msg){
+
+			// console.log(msg);
 
 			$("#utilisateur").val(msg.nom);
 			$("#email").val(msg.email);

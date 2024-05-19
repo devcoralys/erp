@@ -12,11 +12,11 @@
     $red->execute(array('A'=>$id_pers));
     $inf=$red->fetch();
 
-    $red1=$con->prepare(" SELECT * FROM personnel LEFT JOIN utilisateur ON personnel.id_personnel=utilisateur.personnel_id LEFT JOIN groupe_utilisateur ON utilisateur.type_groupe_id=groupe_utilisateur.id_type_groupe WHERE id_utilisateur=:A ");
-    $red1->execute(array('A'=>$id_pers));
-    $inf1=$red1->fetch();
+    // $red1=$con->prepare(" SELECT * FROM personnel LEFT JOIN utilisateur ON personnel.id_personnel=utilisateur.personnel_id LEFT JOIN groupe_utilisateur ON utilisateur.type_groupe_id=groupe_utilisateur.id_type_groupe WHERE id_utilisateur=:A ");
+    // $red1->execute(array('A'=>$id_pers));
+    // $inf1=$red1->fetch();
     
-    $type_groupe=$inf1['type_groupe_id'];
+    // $type_groupe=$inf1['type_groupe_id'];
 
     $nom= $inf['nom_personnel'];
     $email= $inf['email_personnel'];
@@ -29,7 +29,9 @@
     $test['tel'] = stripslashes($tel);
     $test['service'] = stripslashes($service);
     $test['fonction'] = stripslashes($fonction);
-    $test['type_groupe'] = stripslashes($type_groupe);
+    // $test['type_groupe'] = stripslashes($type_groupe);
+
+    // var_dump($test);
 
     echo json_encode($test);
    

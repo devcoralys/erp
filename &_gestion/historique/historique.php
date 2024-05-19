@@ -148,13 +148,6 @@ include('../../connex.php');
                         </li>
                         <?php } ?>
 
-                        <li>
-                            <a href="../rapport/rapport.php" class="active">
-                                <i class="icon nav-icon fa fa-file-text"></i>
-                                <span class="menu-item">Rapport journalier</span>
-                            </a>
-                        </li>
-
                         <li class="menu-title">Sécurité</li>
 
                         <li>

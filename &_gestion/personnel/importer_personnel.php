@@ -615,7 +615,7 @@ $result->execute();
                         <div class="col-sm-6">
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script> &copy; MALEA Supply Chain Services Consulting .
+                            </script> &copy; Dream Team
                         </div>
                         <div class="col-sm-6">
                             <div class="text-sm-end d-none d-sm-block">
