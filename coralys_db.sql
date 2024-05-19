@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : dim. 19 mai 2024 à 14:30
+-- Généré le : dim. 19 mai 2024 à 14:58
 -- Version du serveur : 8.2.0
 -- Version de PHP : 8.2.13
 
@@ -139,7 +139,14 @@ CREATE TABLE IF NOT EXISTS `personnel` (
   `date_creat_sortie` datetime NOT NULL,
   `secur_sup` varchar(12) NOT NULL,
   PRIMARY KEY (`id_personnel`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `personnel`
+--
+
+INSERT INTO `personnel` (`id_personnel`, `matricule_personnel`, `nom_personnel`, `sexe_personnel`, `date_nais_personnel`, `tel_personnel`, `email_personnel`, `photo_personnel`, `date_recrutement`, `service_id`, `fonction_id`, `statut_personnel_id`, `date_creat_personnel`, `secur_ajout`, `valide`, `motif_sortie_personnel`, `date_sortie`, `date_creat_sortie`, `secur_sup`) VALUES
+(1, 'Vel eveniet qui sit', 'Elit ex tempor sit', '2', '1979-01-20', 'Soluta autem volupta', 'rigeba@mailinator.com', '', '2005-09-03', 10, 16, 1, '2024-05-19 14:44:40', 'qXylyjW6OV', 0, 0, '0000-00-00', '0000-00-00 00:00:00', '');
 
 -- --------------------------------------------------------
 
@@ -208,21 +215,15 @@ CREATE TABLE IF NOT EXISTS `trace` (
   `date_trace` datetime NOT NULL,
   PRIMARY KEY (`ref_trace`),
   UNIQUE KEY `id_trace` (`ref_trace`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
 
 --
 -- Déchargement des données de la table `trace`
 --
 
 INSERT INTO `trace` (`ref_trace`, `lib_trace`, `adresse_ip`, `secur`, `date_trace`) VALUES
-(1, 'Connexion de <b>Amin Dev (admin@coralys.ci)</b>', 'Adresse IP: ::1 Port: 64268', 'qXylyjW6OV', '2024-05-19 13:49:09'),
-(2, 'Connexion de <b>Amin Dev (admin@coralys.ci)</b>', 'Adresse IP: ::1 Port: 64619', 'qXylyjW6OV', '2024-05-19 13:56:24'),
-(3, 'Connexion de <b>Amin Dev (admin@coralys.ci)</b>', 'Adresse IP: ::1 Port: 64920', 'qXylyjW6OV', '2024-05-19 14:02:05'),
-(4, 'Connexion de <b>Amin Dev (admin@coralys.ci)</b>', 'Adresse IP: ::1 Port: 64957', 'qXylyjW6OV', '2024-05-19 14:02:44'),
-(5, 'Connexion de <b>Amin Dev (admin@coralys.ci)</b>', 'Adresse IP: ::1 Port: 64979', 'qXylyjW6OV', '2024-05-19 14:03:29'),
-(6, 'Connexion de <b>Amin Dev (admin@coralys.ci)</b>', 'Adresse IP: ::1 Port: 65062', 'qXylyjW6OV', '2024-05-19 14:06:09'),
-(7, 'Connexion de <b>Amin Dev (admin@coralys.ci)</b>', 'Adresse IP: ::1 Port: 65175', 'qXylyjW6OV', '2024-05-19 14:08:33'),
-(8, 'Connexion de <b>Amin Dev (admin@coralys.ci)</b>', 'Adresse IP: ::1 Port: 49826', 'qXylyjW6OV', '2024-05-19 14:16:53');
+(1, 'Cr&eacute;ation de l\'utilisateur <b>Elit ex tempor sit</b> avec email <b>rigeba@mailinator.com</b> avec droit d\'utilisateur <b>Admin</b>', 'Adresse IP: ::1 Port: 51114', 'qXylyjW6OV', '2024-05-19 14:55:38'),
+(2, 'Connexion de <b>Elit ex tempor sit (rigeba@mailinator.com)</b>', 'Adresse IP: ::1 Port: 51162', 'oOWO1Z8aHV', '2024-05-19 14:56:41');
 
 -- --------------------------------------------------------
 
@@ -288,14 +289,15 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
   `agence_utilisateur` text NOT NULL,
   PRIMARY KEY (`id_utilisateur`),
   UNIQUE KEY `id_utilisateur` (`id_utilisateur`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `utilisateur`
 --
 
 INSERT INTO `utilisateur` (`id_utilisateur`, `secur`, `nom_utilisateur`, `email_utilisateur`, `motpass_utilisateur`, `connecte`, `personnel_soignant_id`, `photo_util`, `pseudo`, `tel_utilisateur`, `type_groupe_id`, `valide_util`, `date_creat`, `heure_creat`, `secur_ajout`, `date_mod`, `heure_mod`, `secur_mod`, `date_sup`, `heure_sup`, `secur_sup`, `statut`, `is_dg`, `personnel_id`, `is_valid`, `acces_groupage`, `acces_dossier`, `acces_finance`, `acces_rh`, `acces_secur`, `acces_dashboard`, `acces_client`, `agence_utilisateur`) VALUES
-(12, 'qXylyjW6OV', 'Amin Dev', 'admin@coralys.ci', 'c7ad44cbad762a5da0a452f9e854fdc1e0e7a52a38015f23f3eab1d80b931dd472634dfac71cd34ebc35d16ab7fb8a90c81f975113d6c7538dc69dd8de9077ec', '1', 0, 'photo_1673892590.jpg', '', '225074836771', 1, 0, '2022-12-23', '', 'lol', '0000-00-00', '', '', '0000-00-00', '', '', 0, 1, 6, 0, 0, 0, 0, 1, 1, 1, 1, 'AEROPORT FELIX HOUPHOUET BOIGNY ZONE FRET');
+(12, 'qXylyjW6OV', 'Amin Dev', 'admin@coralys.ci', 'c7ad44cbad762a5da0a452f9e854fdc1e0e7a52a38015f23f3eab1d80b931dd472634dfac71cd34ebc35d16ab7fb8a90c81f975113d6c7538dc69dd8de9077ec', '1', 0, 'photo_1673892590.jpg', '', '225074836771', 1, 0, '2022-12-23', '', 'lol', '0000-00-00', '', '', '0000-00-00', '', '', 0, 1, 6, 0, 0, 0, 0, 1, 1, 1, 1, 'AEROPORT FELIX HOUPHOUET BOIGNY ZONE FRET'),
+(32, 'oOWO1Z8aHV', 'Elit ex tempor sit', 'rigeba@mailinator.com', 'c7ad44cbad762a5da0a452f9e854fdc1e0e7a52a38015f23f3eab1d80b931dd472634dfac71cd34ebc35d16ab7fb8a90c81f975113d6c7538dc69dd8de9077ec', '1', 0, '', '', 'Soluta autem', 2, 0, '2024-05-19', '', 'qXylyjW6OV', '0000-00-00', '', '', '0000-00-00', '', '', 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, '');
 
 -- --------------------------------------------------------
 
